@@ -7,7 +7,8 @@ body {
 
 
 .view {
-   height:100vh
+   height:100vh;
+   width:90vw;
     /*border: solid red;
     border-width: 2px;*/
 
