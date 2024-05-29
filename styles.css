@@ -1,15 +1,26 @@
 
 body {
-    margin: 0px;
-    /*background-color:white;
-    border-width: 5px;
-    border: solid green;*/
+    margin: 10px;
+    padding:0;
+    background-color:black;
+    color:green;
+    /*border: 5px solid green;*/
+    font-family:'Courier New', Courier, monospace
 }
 
 .view {
-    width:100vw;
-    height:100vh;
-    /*border-width: 5px;
-    border: solid red;*/
+    width:100;
+    height:75vh;
+    /*border: 5px solid red;*/
 }
 
+.header {
+
+}
+
+#bio {
+    /*border: 5px solid red;*/
+    width:50%;
+    height:min-content;
+    margin: auto;
+}
