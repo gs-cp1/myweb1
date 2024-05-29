@@ -1,12 +1,15 @@
 
 body {
  margin: 10px;
- padding:20px;
- background:linear-gradient(black,gray);
+ padding:0px ;
+ background-color: black;
 }
 
 
-.viewer {
-    height:100vh;
-    
+.view {
+   height:100vh
+    /*border: solid red;
+    border-width: 2px;*/
+
 }
+
