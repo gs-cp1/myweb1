@@ -24,3 +24,14 @@ body {
     height:auto;
     margin: auto;
 }
+
+.container {
+    display: flex;
+}
+
+.container > div {
+    width: 50%;
+    text-align:center;
+    /*background-color: white;
+    border: 3px solid red;*/
+}
