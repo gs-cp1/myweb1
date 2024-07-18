@@ -1,37 +1,80 @@
 
 body {
-    margin: 10px;
-    padding:0;
-    background-color:black;
-    color:green;
-    /*border: 5px solid green;*/
-    font-family:'Courier New', Courier, monospace
-}
-
-.view {
-    width:100;
-    height:75vh;
-    /*border: 5px solid red;*/
+    height: 100vh;
+    margin: auto;
+    padding: 0 50px 0 50px;
+    background-color:#eaebef;
+    border: solid black;
 }
 
 .header {
-
+    background: #eef9ff;
+    text-align: left;
+    padding: 10px;
+    margin: 0px;
+    font-size: 20px;
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: auto;
+    border: solid green
 }
 
-#bio {
-    /*border: 5px solid red;*/
-    width:50%;
-    height:auto;
-    margin: auto;
+.page {
+    margin: 50px auto;
+    width: 837px;
+    background: white;
+    height:90vh;
+    box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.container {
-    display: flex;
+h1 {
+    /* border: solid black; */
+    margin: 10px;
+    width: fit-content;
+    font-size: 40px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
 }
 
-.container > div {
-    width: 50%;
-    text-align:center;
-    /*background-color: white;
-    border: 3px solid red;*/
+h2, h3 {
+    /* border: solid black; */
+    margin: 10px;
+    width: fit-content;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
 }
+
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Create two unequal columns that floats next to each other */
+  .column {
+    float: left;
+    padding: 10px;
+   
+    background-color: #eef9ff;
+  }
+  
+  .left {
+    width: 65%;
+  }
+  
+  .right {
+    width: 35%;
+    border-left: 2px solid black;
+  }
+  
+  #cont {
+    /* border: solid red; */
+    padding: 30px 10px 30px 10px;
+    height: 200px;
+    display:flex;
+    justify-content:center;
+    background: #eef9ff;
+   }
+
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
