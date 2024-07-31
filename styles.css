@@ -1,189 +1,145 @@
 body {
-    height: 100vh;
-    margin: auto;
-    padding: 0 50px 0 50px;
-    background-color:#eaebef;
-    border: solid black;
+  height: 100vh;
+  margin: 0;
+  padding: 0 5vw;
+  background-color: #eaebef;
+  border: solid black;
 }
 
 .header {
-    background: #eef9ff;
-    text-align: left;
-    padding: 10px;
-    margin: 0px;
-    font-size: 20px;
-    color: black;
-    width:100%;
-    
+  background: #eef9ff;
+  text-align: left;
+  padding: 10px;
+  margin: 0px;
+  font-size: 20px;
+  color: black;
+  width: 100%;
 }
 
 .page {
-    margin: 50px auto;
-    width: 837px;
-    background: white;
-    height:90vh;
-    box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin: 50px auto;
+  width: 90%;
+  max-width: 837px;
+  background: white;
+  height: 90vh;
+  box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 #project1 {
-    border: solid black;
-    margin: 20px;
+  border: solid black;
+  margin: 20px;
+  height:auto; 
+  float: none;
 }
 
 #project2 {
-    border: solid black;
-    margin: 20px;
+  border: solid black;
+  margin: 20px;
+  height:auto;
 }
 
 #project3 {
-    border: solid black;
-    margin: 20px;
+  border: solid black;
+  margin: 20px;
+  height:auto;
 }
 
-
-
 h1 {
-    /* border: solid black; */
-    margin: 10px;
-    width: fit-content;
-    font-size: 40px;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+  margin: 10px;
+  font-size: 2.5rem;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 h2, h3 {
-    /* border: solid black; */
-    margin: 10px;
-    width: fit-content;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+  margin: 10px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 * {
-    box-sizing: border-box;
-  }
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  padding: 10px;
+  background-color: #eef9ff;
+  width: auto;
+}
+
+.left {
+  width: 65%;
+}
+
+.right {
+  width: 35%;
+  border-left: 2px solid black;
+}
+
+#cont {
+  padding: 30px 10px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  background: #eef9ff;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+img {
+  height: 200px;
+  width: 100%;
+  max-width: 300px;
+  margin: 10px;
   
-  /* Create two unequal columns that floats next to each other */
+}
+
+.image-container {
+  display: flex;
+  gap: 10px; /* Adjust the gap between images if needed */
+  overflow: hidden;
+}
+
+.image-container img {
+  flex-shrink: 0;
+  width: 100%; /* Set the desired width */
+  height: auto; /* Maintain aspect ratio */
+  transition: width 0.3s ease; /* Optional: Smooth scaling effect */
+}
+
+
+/* Responsive Adjustments */
+/* for screens less than 768px wide */
+@media only screen and (max-width: 768px) {
   .column {
-    float: left;
-    padding: 10px;
-   
-    background-color: #eef9ff;
-  }
-  
-  .left {
-    width: 65%;
-  }
-  
-  .right {
-    width: 35%;
-    border-left: 2px solid black;
-  }
-  
-  #cont {
-    /* border: solid red; */
-    padding: 30px 10px 30px 10px;
-    height: 200px;
-    display:flex;
-    justify-content:center;
-    background: #eef9ff;
-   }
-
-  /* Clear floats after the columns */
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-
-
-  img {
-    height: 200px;
-    width: 300px;
-    margin: 10px
-  }
-
-
-  #myImg {
-    border-radius: 8px;
-    cursor: pointer;
-    transition: 0.3s;
-  }
-  
-  #myImg:hover {opacity: 0.7;}
-  
-  /* The Modal (background) */
-  .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
-  }
-  
-  /* Modal Content (image) */
-  .modal-content {
-    margin: auto;
-    display: block;
     width: 100%;
-    height:50%;
-    max-width: 900px;
+    float: none;
   }
-  
-  /* Caption of Modal Image */
-  #caption {
-    margin: auto;
-    display: block;
-    width: 80%;
-    max-width: 700px;
-    text-align: center;
-    color: #ccc;
-    padding: 10px 0;
-    height: 150px;
+
+  .left, .right {
+    width: 100%;
   }
-  
-  /* Add Animation */
-  .modal-content, #caption {  
-    -webkit-animation-name: zoom;
-    -webkit-animation-duration: 0.6s;
-    animation-name: zoom;
-    animation-duration: 0.6s;
+
+  h1 {
+    font-size: 1rem;
   }
-  
-  @-webkit-keyframes zoom {
-    from {-webkit-transform:scale(0)} 
-    to {-webkit-transform:scale(1)}
+
+  h2, h3 {
+    font-size: 1rem;
   }
-  
-  @keyframes zoom {
-    from {transform:scale(0)} 
-    to {transform:scale(1)}
+
+  .image-container img {
+    width: 40%; /* Adjust the width for larger screens */
+    border: solid red;
   }
-  
-  /* The Close Button */
-  .close {
-    position: absolute;
-    top: 15px;
-    right: 35px;
-    color: #f1f1f1;
-    font-size: 40px;
-    font-weight: bold;
-    transition: 0.3s;
+}
+
+/* for screens larger than 900px wide*/
+@media (min-width: 900px) {
+  .image-container img {
+      width: 80%; /* Adjust the width for even larger screens */
   }
-  
-  .close:hover, .close:focus {
-    color: #bbb;
-    text-decoration: none;
-    cursor: pointer;
-  }
-  
-  /* 100% Image Width on Smaller Screens */
-  @media only screen and (max-width: 700px){
-    .modal-content {
-      width: 100%;
-    }
-  }
+}
