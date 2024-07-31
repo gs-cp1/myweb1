@@ -26,21 +26,21 @@ body {
 }
 
 #project1 {
-  border: solid black;
-  margin: 20px;
+  /* border: solid black; */
+  margin: 5px;
   height:auto; 
   float: none;
 }
 
 #project2 {
-  border: solid black;
-  margin: 20px;
+  /* border: solid black; */
+  margin: 5px;
   height:auto;
 }
 
 #project3 {
-  border: solid black;
-  margin: 20px;
+  /* border: solid black; */
+  margin: 5px;
   height:auto;
 }
 
@@ -99,7 +99,7 @@ img {
 
 .image-container {
   display: flex;
-  gap: 10px; /* Adjust the gap between images if needed */
+  gap: 0px; /* Adjust the gap between images if needed */
   overflow: hidden;
 }
 
@@ -123,17 +123,23 @@ img {
     width: 100%;
   }
 
-  h1 {
+  h1, h2, h3 {
     font-size: 1rem;
   }
 
-  h2, h3 {
-    font-size: 1rem;
+  .proj {
+    font-size: 17px;
   }
+
+  li {
+    font-size: 11px;
+  }
+
+  
 
   .image-container img {
-    width: 40%; /* Adjust the width for larger screens */
-    border: solid red;
+    width: 45%; /* Adjust the width for larger screens */
+    /* border: solid red; */
   }
 }
 
