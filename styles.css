@@ -148,6 +148,13 @@ img {
   .image-container img {
     width: 45%;  /*Adjust the width for larger screens8*/
   }
+
+  #myImg {
+    width: 40%;
+  }
+  #myImg2 {
+    width: 55%;
+  }
 }
 
 /* for screens > 769 wide*/
