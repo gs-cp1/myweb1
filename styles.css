@@ -41,14 +41,18 @@ body {
   height:auto;
 }
 
-h1, h2, h3 {
+h1 {
   margin: 10px;
   font-size: 2.5rem;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
+h2, h3 {
+  margin: 10px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
 
-
+/* start of columns */
 * {
   box-sizing: border-box;
 }
@@ -82,30 +86,33 @@ h1, h2, h3 {
   display: table;
   clear: both;
 }
+/* end of columns */
+
 
 img {
   height: 200px;
   width: 100%;
   margin: 10px;
-  
 }
 
 .image-container {
   display: flex;
   gap: 0px; /* Adjust the gap between images if needed */
   overflow: hidden;
+  border: solid red
 }
 
 .image-container img {
   flex-shrink: 0;
-  width: 100%; /* Set the desired width */
+  width: 100%;  /* Set the desired width */
   height: auto; /* Maintain aspect ratio */
   transition: width 0.3s ease; /* Optional: Smooth scaling effect */
+  border: solid blue
 }
 
 
 /* Responsive Adjustments */
-/* for screens less than 768px wide */
+/* for screens < 768px wide */
 @media only screen and (max-width: 768px) {
   .column {
     width: 100%;
@@ -139,16 +146,14 @@ img {
   }
 
   .image-container img {
-    width: 45%; /* Adjust the width for larger screens */
-    /* border: solid red; */
+    width: 45%;  /*Adjust the width for larger screens8*/
   }
 }
 
-/* for screens larger than 900px wide*/
-@media (min-width: 900px) {
+/* for screens > 769 wide*/
+@media only screen and (min-width: 769px) {
   .image-container img {
-      width: 35%; Adjust the width for even larger screens
-      border: solid red;
+      width: 35%; /*Adjust the width for even larger screens*/
   }
 
   #myImg {
