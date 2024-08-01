@@ -1,9 +1,8 @@
 body {
-  height: 100vh;
+  height: 100%;
   margin: 0;
   padding: 0 5vw;
   background-color: #eaebef;
-  border: solid black;
 }
 
 .header {
@@ -23,11 +22,9 @@ body {
   background: white;
   height: 90vh;
   box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  /* border: solid orchid; */
 }
 
 #project1 {
-  /* border: solid black; */
   margin: 5px;
   margin-top: 10px;
   height:auto; 
@@ -35,27 +32,22 @@ body {
 }
 
 #project2 {
-  /* border: solid black; */
   margin: 5px;
   height:auto;
 }
 
 #project3 {
-  /* border: solid black; */
   margin: 5px;
   height:auto;
 }
 
-h1 {
+h1, h2, h3 {
   margin: 10px;
   font-size: 2.5rem;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-h2, h3 {
-  margin: 10px;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
+
 
 * {
   box-sizing: border-box;
@@ -94,7 +86,6 @@ h2, h3 {
 img {
   height: 200px;
   width: 100%;
-  max-width: 300px;
   margin: 10px;
   
 }
@@ -156,6 +147,14 @@ img {
 /* for screens larger than 900px wide*/
 @media (min-width: 900px) {
   .image-container img {
-      width: 80%; /* Adjust the width for even larger screens */
+      width: 35%; Adjust the width for even larger screens
+      border: solid red;
+  }
+
+  #myImg {
+    width: 40%;
+  }
+  #myImg2 {
+    width: 55%;
   }
 }
