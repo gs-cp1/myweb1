@@ -99,7 +99,7 @@ img {
   display: flex;
   gap: 0px; /* Adjust the gap between images if needed */
   overflow: hidden;
-  border: solid red
+  
 }
 
 .image-container img {
@@ -107,7 +107,7 @@ img {
   width: 100%;  /* Set the desired width */
   height: auto; /* Maintain aspect ratio */
   transition: width 0.3s ease; /* Optional: Smooth scaling effect */
-  border: solid blue
+  
 }
 
 
