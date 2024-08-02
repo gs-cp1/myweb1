@@ -21,14 +21,14 @@ body {
   height: 1080px;
   max-width: 837px;
   background: white;
-  
+
   box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 #project1 {
   margin: 5px;
   margin-top: 10px;
-  height:auto; 
+  height:auto;
   float: none;
 }
 
@@ -91,24 +91,26 @@ h2, h3 {
 
 
 img {
-  height: 200px;
-  width: 100%;
-  margin: 10px;
+  width:25%;
+  height: auto;
+  margin: 5px;
+ 
 }
 
 .image-container {
   display: flex;
   gap: 0px; /* Adjust the gap between images if needed */
   overflow: hidden;
+  border:solid green;
+  margin-top:0px;
   
 }
 
 .image-container img {
-  flex-shrink: 0;
-  width: 100%;  /* Set the desired width */
-  height: auto; /* Maintain aspect ratio */
+  flex: shrink 0;
   transition: width 0.3s ease; /* Optional: Smooth scaling effect */
-  
+  border: solid red;
+  margin:0px 10px 0px 10px;
 }
 
 
@@ -124,7 +126,7 @@ img {
     height:fit-content;
     /* border: solid black; */
   }
-  
+
   .left, .right {
     width: 100%;
   }
@@ -147,27 +149,26 @@ img {
   }
 
   .image-container img {
-    width: 45%;  /*Adjust the width for larger screens*/
+    width: 45%;  /*Adjust the width for smaller screens*/
   }
 
   #myImg {
     width: 40%;
   }
-  #myImg2 {
-    width: 55%;
-  }
+  
 }
 
 /* for screens > 769 wide*/
 @media only screen and (min-width: 769px) {
-  .image-container img {
-      width: 35%; /*Adjust the width for even larger screens*/
+  
+
+  .imgWide {
+    width:35%;
+    height:auto;
   }
 
-  #myImg {
-    width: 40%;
-  }
-  #myImg2 {
-    width: 55%;
+  #aspire8 {
+    width:25%;
+    height:auto;
   }
 }
