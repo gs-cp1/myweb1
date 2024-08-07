@@ -143,6 +143,6 @@ button:active {
 
 @media (max-width: 500px) {
     .container {
-        margin-top:150px;
+        margin-top:200px;
     }
 }
