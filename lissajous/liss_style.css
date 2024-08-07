@@ -149,6 +149,6 @@ button:active {
 
 @media (max-height: 900px) {
     .container {
-        margin-top:20vh;
+        margin-top:30vh;
     }
 }
