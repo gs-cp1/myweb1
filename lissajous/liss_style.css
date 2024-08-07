@@ -141,8 +141,8 @@ button:active {
     }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 500px) {
     .container {
-        margin-top:240px;
+        margin-top:150px;
     }
 }
