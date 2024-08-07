@@ -146,3 +146,9 @@ button:active {
         margin-top:200px;
     }
 }
+
+@media (max-height: 900px) {
+    .container {
+        margin-top:250px;
+    }
+}
