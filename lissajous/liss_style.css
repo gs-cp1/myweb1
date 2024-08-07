@@ -94,7 +94,7 @@ button:active {
         max-width: 100%; /* Ensure container fits within screen width */
         width: 100%; /* Ensure container uses full width available */
         max-height: fit-content; /* Adjust max height for mobile screens */
-        margin-top:15vh;
+        margin-top:20vh;
     }
 
     h1 {
@@ -143,12 +143,12 @@ button:active {
 
 @media (max-width: 500px) {
     .container {
-        margin-top:400px;
+        margin-top:20vh;
     }
 }
 
 @media (max-height: 900px) {
     .container {
-        margin-top:400px;
+        margin-top:20vh;
     }
 }
